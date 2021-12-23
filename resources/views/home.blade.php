@@ -13,6 +13,15 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                    @role('admin')
+                    <p>This is visible to users the admin role. Gets translated to
+                        \Laratrust::hasRole('admin')</p>
+                    @endrole
+
+                    @role('pengguna')
+                    <p>This is visible to users the pengguna role. Gets translated to
+                        \Laratrust::hasRole('pengguna')</p>
+                    @endrole
 
                     
 
